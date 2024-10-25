@@ -1,5 +1,5 @@
-import { useFoods } from "@/query/foods";
-import { IFood } from "@/types";
+import { useFoods } from "../query/foods";
+import { IFood } from "../types";
 import {
   createContext,
   useContext,

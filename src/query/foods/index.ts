@@ -1,4 +1,4 @@
-import { getCategories, getFoods } from "@/services/foods";
+import { getCategories, getFoods } from "../../services/foods";
 import { useQuery } from "@tanstack/react-query";
 
 export const useCategories = () =>
