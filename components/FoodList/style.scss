@@ -1,0 +1,50 @@
+@import "@/styles/mixins";
+
+.food-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+  
+    .food-card {
+  
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  
+    @include min-sm {
+      gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    @include min-md {
+      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .cards-action {
+    margin: 0 auto;
+    text-align: center;
+  
+    .show-more-button {
+      width: 150px;
+      color: #000;
+      border: 1px solid #FFC637;
+      background-color: transparent;
+  
+      &:focus {
+        outline: 1px solid #FFC637;
+      }
+  
+      &:hover {
+        background-color: #FFC637;
+        border: 1px solid #FFC637;
+      }
+    }
+  }

@@ -1,0 +1,31 @@
+@import "@/styles/mixins";
+
+.search-input {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 12px;
+    padding: 5px 12px;
+    border: 1px solid #EFF0F1;
+    width: 100%;
+    @include min-sm {
+      width: 350px;
+    }
+    height: 40px;
+    background-color: #ffffff;
+  
+    input {
+      border: none;
+      width: 100%;
+  
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  
+    .search-icon {
+      padding: 3px 0;
+      margin-right: 5px;
+    }
+  }

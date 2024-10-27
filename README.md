@@ -1,35 +1,41 @@
 # Next.js + Jest
 
-This example shows how to configure Jest to work with Next.js.
+This is a simple food collection app where users can view the list of foods, search the favorite food by name, and filter by food categories.
 
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript. This example also shows how to use Jest with the App Router and React Server Components.
+To run the app locally, follow these steps:
 
-> **Note:** Since tests can be co-located alongside other files inside the App Router, we have placed those tests in `app/` to demonstrate this behavior (which is different than `pages/`). You can still place all tests in `__tests__` if you prefer.
-
-## Deploy your own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-jest&project-name=with-jest&repository-name=with-jest)
-
-## How to Use
-
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
-
-In your terminal, run the following command:
-
+Clone the repository to your local machine:
 ```bash
-npx create-next-app --example with-jest with-jest-app
+ git clone https://github.com/GiaLuongNgo/food-collection.git
+ or
+ git clone git@github.com:GiaLuongNgo/food-collection.git
 ```
 
+Navigate to the project directory:
 ```bash
-yarn create next-app --example with-jest with-jest-app
+cd food-collection
 ```
 
+Install the required dependencies (Node.js version >= v18.18.0 is required):
 ```bash
-pnpm create next-app --example with-jest with-jest-app
+npm install
 ```
 
-## Running Tests
+Start the local development server:
+```bash
+npm run dev
+```
+
+Open your web browser and visit http://localhost:3000 to access the app.
+
+To run the unit tests locally, follow these steps:
 
 ```bash
-npm test
+npm run test
 ```
+
+The app also have the simple pipeline to checking the building process and running unit tests when devs push a commit, checking at `github Actions` tab
+
+![alt text](image.png)
+
+Make sure you have Node.js and npm installed on your machine before proceeding with the above steps.
