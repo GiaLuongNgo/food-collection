@@ -1,5 +1,3 @@
-"use client";
-
 import { FoodsCollectionProvider } from "@/contexts/FoodsCollectionContext";
 import SearchInput from "@/components/SearchInput";
 import FoodTab from "@/components/FoodTab";
